@@ -1,4 +1,4 @@
-# Cold Email Generator# 📧 AI Cold Email Generator
+# Cold Email Generator # AI Cold Email Generator
 
 A professional cold email generator that helps you create personalized emails for job applications based on job postings.A Streamlit application that generates personalized cold emails for job applications by analyzing job postings using AI.
 
@@ -14,11 +14,9 @@ A professional cold email generator that helps you create personalized emails fo
 
 - Shows detailed job analysis
 
-## Prerequisites
-
 ## Setup
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 
 1. Clone the repository:- Groq API key (sign up at https://console.groq.com)
 
@@ -32,11 +30,9 @@ cd cold-email-generator
 
 
 
-2. Create a virtual environment and activate it:   ```bash
+2. Create a virtual environment and activate it:
 
-```bash   git clone https://github.com/yourusername/project-genai-cold-email-generator.git
-
-python -m venv venv   cd project-genai-cold-email-generator
+python/py -m venv venv
 
 # On Windows:   ```
 
@@ -50,15 +46,15 @@ source venv/bin/activate
 
    # On Windows
 
-3. Install dependencies:   python -m venv venv
+3. Install dependencies:   py -m venv venv
 
-```bash   .\venv\Scripts\activate
+                           .\venv\Scripts\activate
 
-pip install -r requirements.txt
+                           py -m pip install -r requirements.txt
 
 ```   # On macOS/Linux
 
-   python -m venv venv
+##   python -m venv venv
 
 4. Set up environment variables:   source venv/bin/activate
 
@@ -70,13 +66,11 @@ pip install -r requirements.txt
 
 5. Run the application:
 
-```bash   ```bash
+py -m pip install -r requirements.txt
 
-streamlit run src/app.py   pip install -r requirements.txt
+streamlit run src/app.py
 
-```   ```
-
-
+5. Open your web browser and go to http://localhost:8501
 
 ## Usage4. Create a `.env` file in the project root and add your Groq API key:
 
@@ -106,57 +100,3 @@ Never commit your actual `.env` file or API keys. Use `.env.example` as a templa
 3. Enter a job posting URL in the input field
 
 4. Click "Generate Email" to create a personalized cold email
-
-## Project Structure
-
-```
-project-genai-cold-email-generator/
-├── src/
-│   └── app.py           # Main application file
-├── .env                 # Environment variables
-├── .gitignore          # Git ignore file
-├── README.md           # Project documentation
-├── requirements.txt    # Python dependencies
-└── LICENSE            # MIT license file
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions.
-
-**Imagine a scenario:**
-
-- Nike needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
-- Atliq is Software Development company can provide a dedicated software development engineer to Nike. So, the business development executive (Mohan) from Atliq is going to reach out to Nike via a cold email.
-
-![img.png](imgs/img.png)
-
-## Architecture Diagram
-
-![img.png](imgs/architecture.png)
-
-## Set-up
-
-1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created.
-
-2. To get started, first install the dependencies using:
-   ```commandline
-    pip install -r requirements.txt
-   ```
-3. Run the streamlit app:
-   ```commandline
-   streamlit run app/main.py
-   ```
-
-Copyright (C) Codebasics Inc. All rights reserved.
-
-**Additional Terms:**
-This software is licensed under the MIT License. However, commercial use of this software is strictly prohibited without prior written permission from the author. Attribution must be given in all copies or substantial portions of the software.
