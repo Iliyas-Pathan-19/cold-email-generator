@@ -28,7 +28,7 @@ cd cold-email-generator
 
 ```1. Clone the repository:
 
-
+Create an .env file in the `venv/` directory and add your Groq API key:
 
 2. Create a virtual environment and activate it:
 
