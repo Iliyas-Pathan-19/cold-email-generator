@@ -1,0 +1,17 @@
+langchain>=0.0.350langchain>=0.0.350
+
+langchain-core>=0.1.7langchain-core>=0.1.7
+
+langchain-community>=0.0.13langchain-community>=0.0.13
+
+langchain-groq>=0.1.9langchain-groq>=0.1.9
+
+streamlit>=1.29.0streamlit>=1.29.0
+
+python-dotenv>=1.0.0python-dotenv>=1.0.0
+
+requests>=2.31.0requests>=2.31.0
+
+beautifulsoup4>=4.12.2beautifulsoup4>=4.12.2
+
+typing-extensions>=4.5.0typing-extensions>=4.5.0
